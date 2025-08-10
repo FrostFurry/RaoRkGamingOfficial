@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rao RK Gaming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+      border-bottom: 2px solid #333;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #00ffd5;
+      text-shadow: 0 0 10px #00ffd5;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .feature-btn {
+      background: #1a1a1a;
+      color: #00ffd5;
+      border: 2px solid #00ffd5;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .feature-btn:hover {
+      background: #00ffd5;
+      color: #0f0f0f;
+      transform: scale(1.05);
+    }
+
+    .section {
+      display: none;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .section.active {
+      display: block;
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .title {
+      font-size: 32px;
+      color: #ff0080;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 0 0 5px #ff0080;
+    }
+
+    .list {
+      columns: 2;
+      column-gap: 40px;
+      font-size: 18px;
+      padding: 0 20px;
+    }
+
+    .owner {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #ffcc00;
+      text-shadow: 0 0 5px #ffcc00;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .footer a {
+      display: inline-block;
+      margin: 10px;
+      background: #00ffd5;
+      color: #0f0f0f;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      background: #ff0080;
+      color: white;
+    }
+
+    .small-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rao RK Gaming</h1>
+    <div class="features">
+      <button class="feature-btn">Free Blox Fruits Hunts</button>
+      <button class="feature-btn">Hunts of Other Games</button>
+      <button class="feature-btn">Active Staff Team</button>
+      <button class="feature-btn">Role Perks!</button>
+      <button class="feature-btn">Giveaways</button>
+      <button class="feature-btn">Exciting Events</button>
+      <button class="feature-btn" onclick="toggleSection('staff')">Staff Team</button>
+      <button class="feature-btn" onclick="toggleSection('hyper')">Hyper Squads</button>
+      <button class="feature-btn" onclick="toggleSection('former')">Former Staff</button>
+    </div>
+  </header>
+
+  <section id="staff" class="section">
+    <div class="title">STAFF TEAM</div>
+    <div class="owner">👑 Rao RK - Owner 👑</div>
+    <div class="list">
+      Hawk - Co owner<br>
+      Mmorg - Sr.Admin<br>
+      Mj - Admin<br>
+      Demon - Head Mod<br>
+      Pranavan - Head Mod<br>
+      Frost - Sr. Mod<br>
+      Seeky - Sr.Mod<br>
+      Shubham - Sr.Mod<br>
+      Bernei - Sr.Mod<br>
+      Yemin - Hyper Cordinator<br>
+      Divine - Mod<br>
+      Zoro - Mod<br>
+      Aditya - The Goat<br>
+      Chrollo - Sr.Staff<br>
+      Thunder - Sr.Staff<br>
+      Melo - Sr.Staff<br>
+      Easten - New Staff<br>
+      Solo - New Staff<br>
+      Dr.Plague - New Staff<br>
+      DjMoh - New Staff<br>
+    </div>
+  </section>
+
+  <section id="hyper" class="section">
+    <div class="title">HYPER SQUADS</div>
+    <div class="list">
+      FireDestroyer<br>
+      Godzilla<br>
+      Galaxy Rk<br>
+      Aris<br>
+      MS Leader<br>
+      Specticle<br>
+      Thunder<br>
+      Panda Rk<br>
+      Riar<br>
+      DrasticBuddy<br>
+      Fudd<br>
+      Unknown<br>
+      LostDead<br>
+      Cimohta<br>
+      Sh1nx<br>
+      Tanjiro<br>
+      Luffy<br>
+      Larry<br>
+      Mahaoraga<br>
+      Tornado<br>
+      DrXavieR<br>
+      Xiao<br>
+      CsrImposter<br>
+      Frontman<br>
+      Yuki<br>
+      Hixdey<br>
+      DragonEmperour<br>
+      ALO<br>
+      Jacknba5<br>
+      bankai4060<br>
+      Joker<br>
+      Chris<br>
+      NatutoRk<br>
+      Enzo<br>
+      Ignito<br>
+      Hydra<br>
+      Goku<br>
+      Dark Angel<br>
+      Arab<br>
+      Shiroa<br>
+      Rouge<br>
+      Pranav<br>
+      Geto<br>
+      Mr Miau<br>
+      BlackBeard<br>
+      NinjaBlox<br>
+      Beast<br>
+      JrTigerGamingRk<br>
+      GALAXIO<br>
+      Galaxy<br>
+      Uwaitu<br>
+      AN01N_B3ING<br>
+      Yuji<br>
+      justt_someone<br>
+      RgSail<br>
+      Gorgin<br>
+      Pyro<br>
+      Jaxon<br>
+      Bing<br>
+      Smog<br>
+      TempestRK<br>
+      Ace<br>
+      AayushRk<br>
+      jeirodz<br>
+      Yoriichi<br>
+    </div>
+  </section>
+
+  <section id="former" class="section">
+    <div class="title">FORMER STAFF</div>
+    <div class="list">
+      Glirz<br>
+      Hiro<br>
+      Alan<br>
+      Pro cat<br>
+      Last<br>
+      Djmoh femboy<br>
+      M1 flames<br>
+      Pikachu<br>
+      Yuri<br>
+      Aryaman<br>
+      Pranay<br>
+    </div>
+  </section>
+
+  <div class="footer">
+    <a href="https://discord.gg/raorkgaming" target="_blank">Join Our Discord</a>
+    <a href="https://www.youtube.com/@raorkgaming" target="_blank">Visit YouTube</a>
+    <div class="small-text">Official Rao RK Gaming Website❤️</div>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: document.getElementById(id).offsetTop - 50, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
